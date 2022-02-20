@@ -1,5 +1,0 @@
-TX <- read.csv('Tejas.csv')
-TX <- cbind(TX, 'new_cases' = TX[, 'New.Confirmed.Cases'] + TX[, 'New.Probable.Cases'])
-TX <- cbind(TX, 'total_cases' = TX[,'Cumulative.Confirmed.Cases'] + TX[,'Cumulative.Probable.Cases'])
-TX <- cbind(TX, 'total_deaths' = TX[,'Cumulative.Fatalities'])
-write.csv(TX, 'Tejas_revised.csv')
